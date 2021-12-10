@@ -7,24 +7,26 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-##
+## Descargar o clonar el repositorio
 
 Debemos iniciar un servidor en mi caso trabaje con xampp, y clonamos el repositorio dentro de la carpeta htdocs del servidor
 
-## Configurar bd
+## Congigurar la BD
 
 Al descargar o clonar el repositorio, se debe establecer la bd en el archivo .env, el cual tiene la bd apparchivos, bien podriamos crear es bd o reemplazarla en el archivo .env
 
-## Configurar bd
+## Instalacion
 
 Debemos correr el comando dentro de la carpeta apparchivos
 
 npm install
 npm run dev
 
+## Funcionamiento
+
 vamos a la url del navegador por ejemplo
 
-http://localhost/apparchivos/public/
+http://localhost/apparchivos-master/public/
 
 ##Funcionamiento
 
