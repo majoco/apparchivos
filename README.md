@@ -7,55 +7,72 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Descargar o clonar el repositorio
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Debemos iniciar un servidor en mi caso trabaje con xampp, y clonamos el repositorio dentro de la carpeta htdocs del servidor
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Congigurar la BD
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Al descargar o clonar el repositorio, se debe establecer la bd en el archivo .env, el cual tiene la bd apparchivos, bien podriamos crear es bd o reemplazarla en el archivo .env
 
-## Learning Laravel
+## Instalacion
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Debemos correr el comando dentro de la carpeta apparchivos
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+composer install
 
-## Laravel Sponsors
+cp .env.example .env
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- editamos en el archivo .env la bd 
 
-### Premium Partners
+- creamos la bd
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+- generamos una key nueva con:
 
-## Contributing
+php artisan key:generate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- hacemos la migracion
 
-## Code of Conduct
+php artisan migrate
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Funcionamiento
 
-## Security Vulnerabilities
+vamos a la url del navegador por ejemplo
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+http://localhost/apparchivos-master/public/
 
-## License
+##Funcionamiento
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Vamos a registrar un nuevo usuario en el enlace Registrar:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_01.jpg">
+
+Una vez registrado, redirige al home ya logueado, donde tenemos un menu para usuarios logueados:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_02.jpg">
+
+Enlace todo el menu a la gestion de los archivos, si damos click en el menu vamos a la lista de archivos que solo puede ver el usuario logueado, le damos a Subir nuevo archivo:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_03.jpg">
+
+Imgresamos el nombre, seleccionamos el archivo, y una descripcion:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_04.jpg">
+
+Se muestra el archivo recien creado el cual esta en la tabla archivos de la bd:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_05.jpg">
+
+Aca se muestra la tabla con el registro, notese que tiene un user_id, para identificar los archivo de cada usuario:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_06.jpg">
+
+El archivo se guarda en una subcarpeta con el id de usuario, en este caso:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_07.jpg">
+
+Tambien podemos descargar el archivo:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_08.jpg">
+
+Nota: se muestran solo los archivos de este usuario logueado, si registramos otro usuario e ingresamos no saldra este archivo
