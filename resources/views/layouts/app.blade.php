@@ -37,53 +37,54 @@
                     <ul class="navbar-nav mr-auto">
                         @guest
 
-                        @else
+                        @else                            
                             <li class="nav-item dropdown">                                
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 <i class="fa fa-cog vineta"></i> Configuración
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                         <span class="vineta">1</span> Ejecutivos
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">2</span> Imagenes
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">3</span> SGR
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">4</span> Iva
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">5</span> Paises
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">6</span> Monedas
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">7</span> Uso plataforma
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">8</span> Notaria
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">9</span> Submenus
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">10</span> Submenus actions
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost/prueba03/apparchivos/public/archivos"
+                                    <a class="dropdown-item" href="{{ action('ArchivoController@index') }}"
                                        onclick="">
                                        <span class="vineta">11</span> Carga masiva proyectos
                                     </a>
