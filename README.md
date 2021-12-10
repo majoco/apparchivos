@@ -20,6 +20,7 @@ Al descargar o clonar el repositorio, se debe establecer la bd en el archivo .en
 Debemos correr el comando dentro de la carpeta apparchivos
 
 npm install
+
 npm run dev
 
 ## Funcionamiento
