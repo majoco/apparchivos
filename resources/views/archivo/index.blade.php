@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Archivo') }}
+                                {{ __('Archivos') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('archivos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Subir nuevo archivo') }}
                                 </a>
                               </div>
                         </div>
@@ -57,12 +57,12 @@
 
                                                 <td>
                                                     <form action="{{ route('archivos.destroy',$archivo->id) }}" method="POST">                                                                                                                                                            
-                                                        <a class="btn btn-sm btn-primary" href="{{ route('file-download',['id'=>$archivo->id]) }}">Download</a>
-                                                        <a class="btn btn-sm btn-success " href="{{ route('archivos.show',$archivo->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                        <a class="btn btn-sm btn-primary" href="{{ route('file-download',['id'=>$archivo->id]) }}">Descargar</a>
+                                                        <a class="btn btn-sm btn-success " href="{{ route('archivos.show',$archivo->id) }}"><i class="fa fa-fw fa-eye"></i> Mostrar</a>
                                                         <!--<a class="btn btn-sm btn-success" href="{{ route('archivos.edit',$archivo->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>-->
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Borrar</button>
                                                     </form>
                                                 </td>
                                             </tr>

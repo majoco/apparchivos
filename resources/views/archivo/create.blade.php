@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Archivo
+    Nuevo Archivo
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Archivo</span>
+                        <span class="card-title">Subir Archivo</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('archivos.store') }}"  role="form" enctype="multipart/form-data">
