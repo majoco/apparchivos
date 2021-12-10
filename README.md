@@ -17,11 +17,23 @@ Al descargar o clonar el repositorio, se debe establecer la bd en el archivo .en
 
 ## Instalacion
 
-Debemos correr el comando dentro de la carpeta apparchivos
+- Debemos correr el comando dentro de la carpeta apparchivos
 
-npm install
+composer install
 
-npm run dev
+cp .env.example .env
+
+- editamos en el archivo .env la bd 
+
+- creamos la bd
+
+- generamos una key nueva con:
+
+php artisan key:generate
+
+- hacemos la migracion
+
+php artisan migrate
 
 ## Funcionamiento
 
