@@ -28,6 +28,36 @@ http://localhost/apparchivos/public/
 
 ##Funcionamiento
 
+Vamos a registrar un nuevo usuario en el enlace Registrar:
 
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_01.jpg">
 
-<img src="" alt="Total Downloads">
+Una vez registrado, redirige al home ya logueado, donde tenemos un menu para usuarios logueados:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_02.jpg">
+
+Enlace todo el menu a la gestion de los archivos, si damos click en el menu vamos a la lista de archivos que solo puede ver el usuario logueado, le damos a Subir nuevo archivo:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_03.jpg">
+
+Imgresamos el nombre, seleccionamos el archivo, y una descripcion:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_04.jpg">
+
+Se muestra el archivo recien creado el cual esta en la tabla archivos de la bd:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_05.jpg">
+
+Aca se muestra la tabla con el registro, notese que tiene un user_id, para identificar los archivo de cada usuario:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_06.jpg">
+
+El archivo se guarda en una subcarpeta con el id de usuario, en este caso:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_07.jpg">
+
+Tambien podemos descargar el archivo:
+
+<img src="https://galindoteam.com/frdigital/wp-content/uploads/2021/12/app_08.jpg">
+
+Nota: se muestran solo los archivos de este usuario logueado, si registramos otro usuario e ingresamos no saldra este archivo
